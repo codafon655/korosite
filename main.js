@@ -118,7 +118,7 @@ ctx.closePath();
 function mouseMove(event){
     // マウスカーソル座標の更新
     mouse.x = event.clientX - screenCanvas.offsetLeft;
-    mouse.y = event.clientY - screenCanvas.offsetTop;
+    mouse.y = event.clientY - screenCanvas.offsetTop-30;
 
 mouse.x2=mouse.x;
 mouse.y2=mouse.y;
@@ -141,7 +141,7 @@ function touchMove(event){
     // マウスカーソル座標の更新
  event.preventDefault();
     mouse.x = event.changedTouches[0].pageX;
-    mouse.y = event.changedTouches[0].pageY;
+    mouse.y = event.changedTouches[0].pageY-30;
 mouse.x2=mouse.x;
 mouse.y2=mouse.y;
 mouse.x3=mouse.x;
